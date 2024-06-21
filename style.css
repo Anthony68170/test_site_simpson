@@ -1,0 +1,111 @@
+*{
+    margin :  0; /* On enlève sur tous les élements la marge extérieure */
+    padding: 0; /* On enlève sur tous les élements le rembourrage (contour) intérieur */
+    box-sizing: border-box; /* On définit le type de contour applicable à l'ensemble des éléments */
+}
+
+
+body { /* Ici, on appelle l'arrière-plan */
+    background-color: yellow; /* On définit la couleur de l'arrière-plan en jaune */
+    font-weight: white; /* On défnit la couleur de texte uniquement intégré au corps lui-même */
+    margin: auto; /* Pour définir automatiquement la marge extérieure */
+}
+
+
+#container { /* Ici, on appelle l'élémént contenant l'en-tête et la figure d'une part, et le "Main" et le pied-de page (footer) de l'autre */
+    width: 80%; /* On définit la largeur prise par le container au body */
+    margin: auto; /* On définit la taille de la marge applicable au container */
+}
+
+
+h2 { /* Ici, on appelle les caractères présents dans l'en-tête (dans le Header) */
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+
+.simpsonsImg{  /* Ici, on appelle l'élémént "figure" présente dans le container */
+    display: flex; /* On définit le mode display pour adapter/redimensionner l'image selon la place libre de son hôte/parent */
+    width: 100%; /* On défnit la largeur de l'image prise au conteneur */
+    height: 50%; /* On définit  la hauteur/grandeur de la figure */
+}
+
+
+main{ /* Ici, on appelle l'élémént présent dans le conteneur pour modification */
+    background-color: white; /* On définit l'arrière-plan de "Main" en blanc */
+    display: flex; /* Pour redimensionner la taille de l'élément selon la place disponible par son conteneur/parent */
+    padding: 1%; /* On spécifie l'espace qui sépare l'élément par rapport au contenu */
+    
+    
+}
+
+
+nav{ /* Ici, on appelle la fonction nav pour placer un menu */
+    background-color: blue; /* Ici, on fixe la couleur de l'arrière-plan du menu "nav" en bleu */
+    color: white; /* Ici, on fixe la couleur du texte de ce menu en blanc */
+    text-align: center; /* Ici, on décide d'aligner le texte en position centrale */
+    display: flex left; /* Ici, on positionne la cellule du menu en mode flex, pour un déplacement automatique à droite selon la place restante du conteneur */
+    width: 20%; /* Ici, on fixe la largeur de la cellule "nav" en prenant 20% de la largeur totale du conteneur (le parent direct) */
+    height: 30%; /* Ici, on fixe la hauteur de la cellule à 30% de la hauteur totale du conteneur main*/
+    padding: 1%; /* Ici, on fixe l'épaisseur intérieure de la cellule nav à 1% */
+}
+ul { /* Ici, on appelle la fonction de liste de puce dans le menu nav */
+    list-style-type: none; /* Ici, on décide de retirer la liste de puce */
+  }
+  li{ /* Ici, on appelle chaque élément de la liste */
+    padding-bottom: 4%; /* Ici, on décide d'épaissir la partie basse des éléments de 4% */
+  }
+
+nav>ul>li>span>a{ /* Ici, on décide d'ajouter des icônes à la place des puces intégrées au menu nav */
+    color:white; /* Ici, on fixe la couleur du texte de la cellule menu en blanc */
+}
+
+h1{ /* Ici, on appelle le titre principal */
+    color: rgba(212, 193, 21, 0.842); /* Ici, on fixe la couleur du texte/titre principal avec un code RGB */
+    padding: 1%; /* Ici, on décide d'épaissir le contour intérieur de 1% sur l'ensemble de la cellule contenant le titre */
+    padding-top: 0; /* Ici, on fixe les espaces entre le titre et son conteneur à 0% */ 
+
+}
+
+article{ /* Ici, on appelle une cellule permettant d'intégrer un texte */
+    background-color: white; /* Ici, on fixe la couleur de l'arrière-plan de la cellule article en blanc */
+
+    width: 80%; /* ici, on fixe la largeur de la cellule article en orenant 80% de l'espace de son conteneur */
+    min-height: min-content; /* Ici, on fixe la hauteur minimum de l'article selon la place disponible par son conteneur */
+}
+
+article>p{ /* Ici, on appelle la fonction p, permettant d'inscrire du texte dans la cellule article */
+    color: black; /* Ici, la couleur de texte est fixé en noire */
+    padding: 1%; /* Ici, on fixe l'épaisseur intérieur de la cellule article à 1% */
+    display: flex; /* Ici, on permet à la cellule un déplacement flexible selon le positionnement des autres cellules adjacentes */
+}
+
+aside{ /* Ici, on appelle la fonction permettant d'intéger à la fois une figure et du texte */
+    background-color: blue; /* Ici, on fixe la couleur de l'arrière-plan de la cellule aside en bleu */
+    width: 20%;  /* ici, on fixe la largeur de la cellule aside en prenant 20% de l'espace de son conteneur */
+    text-align: center; /* Ici, on décide d'aligner le texte contenu dans la cellule aside (ex : titre) */
+    padding: 1%;  /* Ici, on fixe l'épaisseur intérieure de la cellule aside à 1% */
+}
+
+.matt{ /* Ici, on cible avec le . l'image précédemment nommée dans le fichier html */
+    width: 90%; /* Ici, on fixe la largeur de l'élément nommé mat (image) en prenant 90% de l'espace disponible par son conteneur */
+}
+h3{ /* Ici, on appelle une 3eme cellule contenant le 3ème titre */
+    color:white; /* Ici, on fixe la couleur du texte/titre de H3 en blanc */
+    margin: 1em;
+    text-align: center;
+}
+
+p{ /* Ici, on appelle l'ensemble des cellules p contenant du texte, à appliquer les règles ci-dessous */ 
+    color:white; /* Ici, on fixe la couleur du texte présent dans les cellules p, en blanc */
+    text-align: justify; /* Ici, on décide d'aligner de manière type en justifié, tous les caractères présents dans les cellules p */
+    font-size: 16px; /*Ici, on fixe la taillede la police à 16px*/
+}
+
+footer{ /* Ici on appelle la fonction pied de page */
+    background-color: blue; /* Ici, on fixe la couleur de l'arrière-plan du pied de page en bleu */
+    text-align: center; /* Ici, on décide de centrer le texte du pied de page */ 
+    color:white; /* Ici, on décide de fixer la couleur du texte du pied de page en blanc */
+}
+
